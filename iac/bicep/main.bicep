@@ -36,7 +36,7 @@ param purview_location string= 'australiaeast'
 param purview_name string = 'adams_fabric_purview'
 
 @description('Flag to indicate whether auditing of data platform resources should be enabled')
-param enable_audit bool = false
+param enable_audit bool = true
 
 @description('Resource group where audit resources will be deployed if enabled. Resource group will be created if it doesnt exist')
 param auditrg string= 'adams_test_fabric_accelerator_audit'
