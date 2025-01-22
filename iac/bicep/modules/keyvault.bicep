@@ -22,7 +22,7 @@ param purview_account_name string
 param purviewrg string
 
 @description('Flag to indicate whether to enable integration of data platform resources with either an existing or new Purview resource')
-param enable_purview bool=true
+param enable_purview bool=false
 
 // Variables
 var suffix = uniqueString(resourceGroup().id)
