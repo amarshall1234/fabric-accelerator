@@ -27,7 +27,7 @@ param create_purview bool = false
 param enable_purview bool = false
 
 @description('Resource group where Purview will be deployed. Resource group will be created if it doesnt exist')
-param purviewrg string= 'rg-datagovernance'
+param purviewrg string= 'adams_test_fabric_accelerator_datagovernance'
 
 @description('Location of Purview')
 param purview_location string= 'australiaeast'
@@ -39,7 +39,7 @@ param purview_name string = 'adams_fabric_purview'
 param enable_audit bool = false
 
 @description('Resource group where audit resources will be deployed if enabled. Resource group will be created if it doesnt exist')
-param auditrg string= 'adams_test_fabric_accelerator_datagovernance'
+param auditrg string= 'adams_test_fabric_accelerator_audit'
 
 
 // Variables
