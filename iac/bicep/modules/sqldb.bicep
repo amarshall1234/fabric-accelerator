@@ -108,8 +108,8 @@ module storage_permissions 'storage-permissions.bicep' = if(enable_audit)  {
   name: 'storage_permissions'
   scope: resourceGroup(auditrg)
   params:{
-    storage_name: audit_storage_name
-    storage_rg: auditrg
+    //storage_name: audit_storage_name
+    //storage_rg: auditrg
     principalId: sqlserver.identity.principalId
     grant_reader: false
     grant_contributor: true
